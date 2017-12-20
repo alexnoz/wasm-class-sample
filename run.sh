@@ -1,6 +1,6 @@
 #!/bin/bash
 
-url=http://localhost:8080/index.html
+url="http://localhost:8080"
 
 # Ideally, `js` and `wasm` files should be emitted to some build folder,
 # but it doesn't work ¯\_(ツ)_/¯
