@@ -1,0 +1,17 @@
+{
+  "name": "wasm-class-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alex Nozdriukhin <alex-nozzz@mail.ru>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexnoz/wasm-class-sample.git"
+  },
+  "scripts": {
+    "start": "sh ./run.sh && http-server ."
+  },
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}

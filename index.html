@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>C++ WASM Demo</title>
+</head>
+<body>
+  <span style="font-size: 50px;">🐶</span>
+  <button id="hi">Say hi</button>
+  <button id="bark">Bark (console)</button>
+  <script src="/dog.js"></script>
+  <script>
+    Module.addOnPostRun(() => {
+      const dog = new Module.Dog('Snoopy')
+      hi.onclick = () => alert(dog.getGreeting())
+      bark.onclick = () => dog.makeSound()
+    })
+  </script>
+</body>
+</html>
