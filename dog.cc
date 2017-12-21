@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #include "dog.h"
 #include "emscripten/bind.h"
