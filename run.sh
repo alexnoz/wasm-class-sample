@@ -5,7 +5,8 @@ url="http://localhost:8080"
 # Ideally, `js` and `wasm` files should be emitted to some build folder,
 # but it doesn't work ¯\_(ツ)_/¯
 
-emcc --bind -Oz dog.cc -o dog.js -s WASM=1 -s NO_EXIT_RUNTIME=1
+emcc --bind -Oz dog.cc -o dog.js -s WASM=1 -s NO_EXIT_RUNTIME=1 \
+|| exit 1
 
 case "$OSTYPE" in
   msys)
