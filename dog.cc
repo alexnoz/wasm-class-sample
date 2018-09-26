@@ -14,7 +14,7 @@ string Dog::getGreeting () {
 }
 
 void Dog::makeSound () {
-  cout << "bark!" << endl;
+  cout << "bark!" << '\n';
 }
 
 EMSCRIPTEN_BINDINGS (c) {

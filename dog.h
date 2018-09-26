@@ -3,11 +3,11 @@
 
 #include <string>
 
-using namespace std;
+using std::string;
 
 class Dog {
-  private:
-    string name;
+  string name;
+
   public:
     Dog (string n);
     string getGreeting ();
